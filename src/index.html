@@ -1,340 +1,259 @@
 <!doctype html>
 <html lang="en">
-  <!-- put in html tag class="dark" to enable dark mode -->
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/output.css" />
-  </head>
-  <body
-    class="flex h-screen items-center justify-center bg-gray-300 font-inter dark:bg-gray-700"
-  >
-    <div
-      class="w-full max-w-sm rounded-lg bg-white p-12 shadow-lg dark:bg-primary-dark"
-    >
-      <div class="mb-6 flex items-center justify-between">
-        <h2 class="text-xl font-bold text-primary dark:text-white">
-          October 2020
-        </h2>
-        <div class="flex space-x-4">
-          <img
-            src="./assets/Previous.svg"
-            alt="Left Arrow"
-            class="size-2.5 cursor-pointer dark:hidden"
-          />
-          <img
-            src="./assets/Next.svg"
-            alt="Right Arrow"
-            class="size-2.5 cursor-pointer dark:hidden"
-          />
-          <img
-            src="./assets/Previous_white.svg"
-            alt="Left Arrow"
-            class="hidden size-2.5 cursor-pointer dark:block"
-          />
-          <img
-            src="./assets/Next_white.svg"
-            alt="Right Arrow"
-            class="hidden size-2.5 cursor-pointer dark:block"
-          />
-        </div>
-      </div>
+<!-- put in html tag class="dark" to enable dark mode -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/output.css" />
+</head>
 
-      <div class="mb-8 grid grid-cols-7 gap-2">
-        <div class="flex w-full justify-center">
-          <p
-            class="text-center text-base font-medium text-primary dark:text-white"
-          >
-            Mo
-          </p>
-        </div>
-        <div class="flex w-full justify-center">
-          <p
-            class="text-center text-base font-medium text-primary dark:text-white"
-          >
-            Tu
-          </p>
-        </div>
-        <div class="flex w-full justify-center">
-          <p
-            class="text-center text-base font-medium text-primary dark:text-white"
-          >
-            We
-          </p>
-        </div>
-        <div class="flex w-full justify-center">
-          <p
-            class="text-center text-base font-medium text-primary dark:text-white"
-          >
-            Th
-          </p>
-        </div>
-        <div class="flex w-full justify-center">
-          <p
-            class="text-center text-base font-medium text-primary dark:text-white"
-          >
-            Fr
-          </p>
-        </div>
-        <div class="flex w-full justify-center">
-          <p
-            class="text-center text-base font-medium text-primary dark:text-white"
-          >
-            Sa
-          </p>
-        </div>
-        <div class="flex w-full justify-center">
-          <p
-            class="text-center text-base font-medium text-primary dark:text-white"
-          >
-            Su
-          </p>
-        </div>
-        <div
-          class="col-start-4 flex w-full cursor-pointer justify-center px-2 py-2"
-        >
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            1
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            2
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            3
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            4
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            5
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            6
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            7
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer items-center justify-center">
-          <p
-            class="group relative z-20 flex h-8 w-8 items-center justify-center text-base font-medium text-white"
-          >
-            8
-            <span
-              class="absolute -z-10 h-10 w-10 rounded-full bg-selected-red hover:bg-red-700 group-hover:bg-red-700 dark:bg-selected-green dark:hover:bg-green-700 dark:group-hover:bg-green-700"
-            ></span>
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            9
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            10
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            11
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            12
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            13
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            14
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            15
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            16
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            17
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            18
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            19
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            20
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            21
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            22
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            23
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            24
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            25
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            26
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            27
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            28
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            29
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            30
-          </p>
-        </div>
-        <div class="flex w-full cursor-pointer justify-center px-2 py-2">
-          <p
-            class="text-base font-medium text-light-gray dark:text-secondary-dark"
-          >
-            31
-          </p>
-        </div>
-      </div>
+<body class="flex h-screen items-center justify-center bg-gray-300 dark:bg-gray-700">
+  <div class="hidden">
+    <svg>
+      <symbol id="next" width="14" height="14" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1.17867 0.379617L3.23047 2.43142L1.17867 4.48322" stroke="currentColor" stroke-width="0.725422" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <svg>
+      <symbol id="prev" width="14" height="14" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3.27168 0.379617L1.21988 2.43142L3.27168 4.48322" stroke="currentColor" stroke-width="0.725422" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
 
-      <div
-        class="flex flex-col gap-4 border-t border-divider pt-8 dark:border-divider-dark"
-      >
-        <div class="flex flex-col justify-start">
-          <p class="text-xs text-light-gray dark:text-secondary-dark">8 AM</p>
-          <p class="font-medium text-primary dark:text-white">Breakfast</p>
-        </div>
-        <div class="flex flex-col justify-start">
-          <p class="text-xs text-light-gray dark:text-secondary-dark">10 AM</p>
-          <p class="font-medium text-primary dark:text-white">
-            Travel to venue
-          </p>
-        </div>
-        <div class="flex flex-col justify-start">
-          <p class="text-xs text-light-gray dark:text-secondary-dark">
-            10:30 AM
-          </p>
-          <p class="font-medium text-primary dark:text-white">Ceremony</p>
-        </div>
+  <div class="w-full max-w-sm rounded-lg bg-white p-12 shadow-lg dark:bg-primary-dark">
+    <div class="mb-6 flex items-center justify-between">
+      <h3 class="text-xl font-bold text-primary dark:text-white">
+        October 2020
+      </h3>
+      <div class="flex justify-between gap-2 items-center">
+        <svg class="size-7 text-primary cursor-pointer dark:text-white p-2 overflow-visible"><use xlink:href ="#prev"></use></svg>
+        <svg class="size-7 text-primary cursor-pointer dark:text-white p-2 overflow-visible"><use xlink:href ="#next"></use></svg>
       </div>
     </div>
-  </body>
+
+    <div class="mb-8 grid grid-cols-7 gap-2">
+      <div class="flex justify-center items-center size-10">
+        <span class="text-base font-medium text-primary dark:text-white">
+          Mo
+        </span>
+      </div>
+      <div class="flex justify-center items-center size-10">
+        <span class="text-base font-medium text-primary dark:text-white">
+          Tu
+        </span>
+      </div>
+      <div class="flex justify-center items-center size-10">
+        <span class="text-base font-medium text-primary dark:text-white">
+          We
+        </span>
+      </div>
+      <div class="flex justify-center items-center size-10">
+        <span class="text-base font-medium text-primary dark:text-white">
+          Th
+        </span>
+      </div>
+      <div class="flex justify-center items-center size-10">
+        <span class="text-base font-medium text-primary dark:text-white">
+          Fr
+        </span>
+      </div>
+      <div class="flex justify-center items-center size-10">
+        <span class="text-base font-medium text-primary dark:text-white">
+          Sa
+        </span>
+      </div>
+      <div class="flex justify-center items-center size-10">
+        <span class="text-base font-medium text-primary dark:text-white">
+          Su
+        </span>
+      </div>
+
+      <div>
+        <span class="hidden"> 29 </span>
+      </div>
+      <div>
+        <span class="hidden"> 30 </span>
+      </div>
+      <div>
+        <span class="hidden"> 31 </span>
+      </div>
+      
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          1
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          2
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          3
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark ">
+          4
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          5
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          6
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          7
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10 bg-selected-red hover:bg-red-700 rounded-full dark:bg-selected-green dark:hover:bg-green-700">
+        <span
+          class="text-base font-medium text-white">
+          8
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          9
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          10
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          11
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          12
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          13
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          14
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          15
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          16
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          17
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          18
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          19
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          20
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          21
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          22
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          23
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          24
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10 ">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          25
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          26
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          27
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          28
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          29
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          30
+        </span>
+      </div>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="text-base font-medium text-light-gray dark:text-secondary-dark">
+          31
+        </span>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-4 border-t border-divider pt-8 dark:border-divider-dark">
+      <div class="flex flex-col justify-start">
+        <span class="text-xs text-light-gray dark:text-secondary-dark">8 AM</span>
+        <span class="font-medium text-primary dark:text-white">Breakfast</span>
+      </div>
+      <div class="flex flex-col justify-start">
+        <span class="text-xs text-light-gray dark:text-secondary-dark">10 AM</span>
+        <span class="font-medium text-primary dark:text-white">
+          Travel to venue
+        </span>
+      </div>
+      <div class="flex flex-col justify-start">
+        <span class="text-xs text-light-gray dark:text-secondary-dark">
+          10:30 AM
+        </span>
+        <span class="font-medium text-primary dark:text-white">Ceremony</span>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
