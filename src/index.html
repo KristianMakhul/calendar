@@ -6,9 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="./css/output.css" />
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){ // Аналог $(document).ready(function(){
+      document.getElementById('toggle-dark-mode').addEventListener('change', function() {
+        document.documentElement.classList.toggle('dark');
+      });
+    });
+  </script>
 </head>
 
 <body class="flex h-screen items-center justify-center bg-gray-300 dark:bg-gray-700">
+  <label class="absolute top-5 right-50 dark:text-white select-none">
+    Dark Mode
+    <input type="checkbox" id="toggle-dark-mode">
+  </label>
   <div class="hidden h-0 w-0">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0"><defs>
       <symbol id="next" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,7 +33,7 @@
     </svg>
   </div>
 
-  <div class="w-full max-w-sm rounded-lg bg-white p-12 shadow-lg dark:bg-primary-dark">
+  <div class="rounded-lg bg-white p-12 shadow-lg dark:bg-primary-dark">
     <div class="mb-6 flex items-center justify-between">
       <h3 class="text-xl font-bold text-primary dark:text-white">
         October 2020
@@ -74,16 +85,21 @@
         </span>
       </div>
 
-      <div>
-        <span class="hidden"> 29 </span>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="hidden font-medium text-light-gray dark:text-secondary-dark">
+          29
+        </span>
       </div>
-      <div>
-        <span class="hidden"> 30 </span>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="hidden font-medium text-light-gray dark:text-secondary-dark">
+          30
+        </span>
       </div>
-      <div>
-        <span class="hidden"> 31 </span>
+      <div class="flex cursor-pointer justify-center items-center size-10">
+        <span class="hidden font-medium text-light-gray dark:text-secondary-dark">
+          31
+        </span>
       </div>
-
       <div class="flex cursor-pointer justify-center items-center size-10">
         <span class="font-medium text-light-gray dark:text-secondary-dark">
           1
